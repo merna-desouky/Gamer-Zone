@@ -13,7 +13,7 @@ function Login() {
             <div className="login">
                 <Link to="/">
                     <img
-                        src="../src/assets/images/logo1.png"
+                        src="../../assets/images/logo1.png"
                         width="150px"
                         height="50px"
                         className="authLogo"
