@@ -1,0 +1,144 @@
+.singleProductGames,
+.singleProductConsoles {
+    margin-bottom: 30px;
+}
+.singleProductGames .myCard .img {
+    min-height: 90vh;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    /* background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.9557072829131653) 0%,
+        rgba(0, 0, 0, 0) 100%
+    ); */
+}
+a {
+    text-decoration: none !important;
+}
+.content {
+    padding: 90px 0;
+}
+.content .name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fefcfe;
+}
+
+.content .catg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.content .catg .rect {
+    display: flex;
+    width: 8px;
+    height: 8px;
+    margin: 0 20px;
+    background-color: var(--text-color);
+}
+.content .desc {
+    padding-inline-end: 600px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: #fefcfe;
+}
+.content .buttons {
+    display: flex;
+    align-items: center;
+}
+.content .buttons button {
+    margin-inline-end: 20px;
+}
+.content .buttons button:first-child {
+    width: 150px;
+    height: 70px;
+}
+.content .buttons .product-btn {
+    border-radius: 8px;
+    color: #fefcfe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-var3);
+    border: 1px solid transparent;
+    width: 70px;
+    height: 45px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+.content .buttons .product-btn:hover {
+    border: 1px solid #fefcfe;
+    box-shadow: 0px 0px 3px 0px #ebeaea;
+}
+
+@media (max-width: 1200px) {
+    .singleProductGames .myCard .content .desc {
+        padding-inline-end: 300px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .singleProductGames .myCard .content {
+        padding: 60px 0;
+    }
+}
+@media (max-width: 880px) {
+    .singleProductGames .myCard .content .desc {
+        padding-inline-end: 100px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+}
+@media (max-width: 550px) {
+    .singleProductGames .myCard .content .name {
+        font-size: 1.6rem;
+    }
+
+    .singleProductGames .myCard .content .desc {
+        padding-inline-end: 0;
+    }
+}
+@media (max-width: 400px) {
+    .content .buttons button:first-child {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .content .buttons a:first-child {
+        width: 100%;
+    }
+    .content .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.singleProductConsoles .content {
+    padding: 0;
+}
+.singleProductConsoles .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.singleProductConsoles .img img {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+}
+.singleProductConsoles .content .desc {
+    padding-inline-end: 0;
+}
+@media (max-width: 400px) {
+    .singleProductConsoles .img img {
+        width: 300px;
+        height: 300px;
+    }
+}

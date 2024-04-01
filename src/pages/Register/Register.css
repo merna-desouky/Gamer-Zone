@@ -1,0 +1,60 @@
+.register-holder {
+    display: flex;
+    gap: 6rem;
+    min-height: 100vh;
+}
+.register-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.register-image :nth-child(2) {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+.welcome {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--color-var4);
+    text-transform: uppercase;
+}
+.account {
+    color: white;
+}
+.or {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.account a {
+    text-decoration: none;
+    color: var(--color-var4);
+}
+.register {
+    margin: 90px;
+}
+.register .authLogo {
+    top: -60px;
+}
+.register {
+    position: relative;
+}
+.copy-right {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--color-var4);
+}
+@media (max-width: 767px) {
+    .register-holder {
+        justify-content: center;
+    }
+    .register-image {
+        display: none;
+    }
+    .or {
+        font-size: 1rem;
+        margin: 0.4rem 0;
+    }
+}

@@ -1,0 +1,47 @@
+.login-holder {
+    display: flex;
+    gap: 6rem;
+    height: 100vh;
+}
+.login-image {
+    position: relative;
+    overflow: hidden;
+}
+.authLogo {
+    position: absolute;
+    top: -130px;
+    right: 0;
+}
+
+.login {
+    align-self: center;
+    position: relative;
+}
+.login-image :nth-child(2) {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--color-var4);
+    text-transform: uppercase;
+}
+@media (max-width: 767px) {
+    .login-holder {
+        justify-content: center;
+    }
+    .login-image {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .login-holder {
+        margin-top: 40%;
+        height: 0;
+    }
+    .login {
+        align-self: normal;
+    }
+}

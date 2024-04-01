@@ -1,0 +1,18 @@
+.paymentSuccess {
+    margin: 60px 0;
+}
+.paymentSuccess h1 {
+    color: white;
+}
+.paymentSuccess button {
+    background-color: var(--color-var4);
+    width: 150px;
+    height: 45px;
+    border-radius: 7px;
+    font-size: 18px;
+    border: none;
+    color: white;
+}
+.paymentSuccess button:hover {
+    background-color: #dd372e;
+}

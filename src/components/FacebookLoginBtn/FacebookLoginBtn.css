@@ -1,0 +1,19 @@
+.Facebook-login-button {
+    background-color: transparent !important;
+    /* color: var(--color-var4) !important; */
+    border: 1px solid var(--color-var4) !important;
+    width: 200px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 0.8rem !important;
+}
+/* .Facebook-login-button path {
+    fill: whit !important;
+} */
+@media (max-width: 480px) {
+    .Facebook-login-button {
+        font-size: 0.6rem !important;
+    }
+}

@@ -1,0 +1,68 @@
+.navText {
+    font-size: 16px;
+    margin-right: 20px;
+}
+.navText {
+    color: #18272f;
+    position: relative;
+    text-decoration: none;
+}
+.navText {
+    color: white;
+}
+
+.navText::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #ff4136;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navText:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.signButton button {
+    background-color: #ff4136;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .signButton {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .signButton button {
+        font-size: 13px !important;
+    }
+    .smallMedia {
+        /* text-align: center; */
+        margin-left: 2% !important;
+        margin-top: 20px;
+    }
+}
+.rightSide {
+    display: flex;
+    align-items: center;
+}
+.myLink {
+    color: black !important;
+}
+.avatar img {
+    filter: invert(86%) sepia(100%) saturate(0%) hue-rotate(127deg)
+        brightness(103%) contrast(104%);
+}
+.cart {
+    margin-inline-end: 30px;
+    margin-top: 5px;
+}
