@@ -7,8 +7,8 @@ export default function Register() {
     return (
         <div className="register-holder">
             <div className="register-image">
-                <img src="/public/images/Rectangle 3.png" alt="game-image" />
-                <img src="/public/images/Overlay.png" alt="overlay" />
+                <img src="/images/Rectangle 3.png" alt="game-image" />
+                <img src="/images/Overlay.png" alt="overlay" />
             </div>
             <div className="register">
                 <Link to="/">
