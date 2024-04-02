@@ -21,6 +21,7 @@ const Navbar = () => {
             (total, item) => total + item.counter,
             0
         );
+
         setBadge(totalItemsInCart);
     }, [cart]);
 
@@ -39,6 +40,7 @@ const Navbar = () => {
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
+
     const handleClose = () => {
         setAnchorEl(null);
     };
@@ -69,6 +71,7 @@ const Navbar = () => {
                     >
                         <span className="navbar-toggler-icon"></span>
                     </button>
+
                     <div
                         className="collapse navbar-collapse"
                         id="navbarSupportedContent"
@@ -77,7 +80,7 @@ const Navbar = () => {
                             className={`${navbarStyle.smallMedia} navbar-nav me-auto mb-2 mb-lg-0`}
                             style={{ marginLeft: '35%' }}
                         >
-                            <li className="nav-item">
+                            <li className={`nav-item ${navbarStyle.navItem}`}>
                                 <NavLink
                                     className={`${navbarStyle.navText} nav-link `}
                                     exact
@@ -86,16 +89,15 @@ const Navbar = () => {
                                     Home
                                 </NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className={`nav-item ${navbarStyle.navItem}`}>
                                 <NavLink
-                                    activeClassName={navbarStyle.activeLink}
-                                    className={`${navbarStyle.navText} nav-link `}
+                                    className={`${navbarStyle.navText} nav-link ${navbarStyle.activeLink}`}
                                     to="/products"
                                 >
                                     Products
                                 </NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className={`nav-item ${navbarStyle.navItem}`}>
                                 <button
                                     className={`${navbarStyle.navText} nav-link text-light`}
                                     onClick={handleContactClick}
@@ -148,11 +150,22 @@ const Navbar = () => {
                                             }
                                             onClick={handleClick}
                                         >
-                                            <img
-                                                src="/images/profile.png"
-                                                width="40px"
-                                                height="40px"
-                                            ></img>
+                                            {isLogged.picture ? (
+                                                <img
+                                                    src={isLogged.picture}
+                                                    width="40px"
+                                                    height="40px"
+                                                    style={{
+                                                        borderRadius: '50%',
+                                                    }}
+                                                ></img>
+                                            ) : (
+                                                <img
+                                                    src="/images/profile.png"
+                                                    width="40px"
+                                                    height="40px"
+                                                ></img>
+                                            )}
                                         </Button>
                                         <Menu
                                             id="basic-menu"

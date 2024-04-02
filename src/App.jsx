@@ -14,7 +14,7 @@ import { setLogin } from './redux/store/LoginSlice/LoginSlice';
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 import Layout from './components/Layout/Layout';
 import Payed from './pages/Checkout/Checkout';

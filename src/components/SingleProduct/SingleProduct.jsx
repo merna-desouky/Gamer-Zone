@@ -74,7 +74,7 @@ export default function SingleProduct({ item, fav }) {
                                                 onClick={() => {
                                                     if (!isLogged) {
                                                         navigate('/login');
-                                                    }
+                                                }
                                                 }}
                                             ></FavoriteBorderIcon>
                                         )}

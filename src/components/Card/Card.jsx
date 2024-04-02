@@ -25,6 +25,9 @@ export default function ProductCard({ product }) {
 
     const handleToggle = () => {
         toggleFavorite(product);
+        if (!isLogged) {
+            navigate('/login');
+        }
     };
     const handleAddCart = (el) => {
         addToCart(el);
@@ -52,11 +55,6 @@ export default function ProductCard({ product }) {
             ) : (
                 <IconButton className="fav-btn" onClick={handleToggle}>
                     <FavoriteBorderOutlinedIcon
-                        onClick={() => {
-                            if (!isLogged) {
-                                navigate('/login');
-                            }
-                        }}
                         sx={{
                             fontSize: '25px',
                             color: 'var(--color-var4)',

@@ -42,7 +42,7 @@ function Home() {
                             <div className={`${homeStyle.leftContent}`}>
                                 <h5
                                     style={{
-                                        fontSize: '40px',
+                                        fontSize: '30px',
                                         fontWeight: 'bold',
                                     }}
                                 >
@@ -50,20 +50,29 @@ function Home() {
                                 </h5>
                                 <div className="d-grid gap-2 d-md-block mt-3">
                                     <div
-                                        className="p-1 bg-secondary text-white rounded-1 d-inline-block mx-1"
-                                        style={{ width: '110px' }}
+                                        className="p-3 bg-secondary text-white rounded-1 d-inline-block mx-1"
+                                        style={{
+                                            width: '150px',
+                                            fontSize: '11px',
+                                        }}
                                     >
                                         Multiplayer
                                     </div>
                                     <div
-                                        className="p-1 bg-secondary text-white rounded-1 d-inline-block mx-1"
-                                        style={{ width: '110px' }}
+                                        className="p-3 bg-secondary text-white rounded-1 d-inline-block mx-1"
+                                        style={{
+                                            width: '150px',
+                                            fontSize: '11px',
+                                        }}
                                     >
                                         Massively
                                     </div>
                                     <div
-                                        className="p-1 bg-secondary text-white rounded-1 d-inline-block mx-1"
-                                        style={{ width: '110px' }}
+                                        className="p-3 bg-secondary text-white rounded-1 d-inline-block mx-1"
+                                        style={{
+                                            width: '150px',
+                                            fontSize: '11px',
+                                        }}
                                     >
                                         Beat em Up
                                     </div>
