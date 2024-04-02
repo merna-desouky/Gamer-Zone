@@ -4,6 +4,7 @@ import Joi from 'joi';
 import { useDispatch } from 'react-redux';
 import { setLogin } from '../../redux/store/LoginSlice/LoginSlice';
 import './LoginComponent.css';
+import { TextField } from '@mui/material';
 function LoginComponent() {
     //Redux
     const dispatch = useDispatch();
@@ -89,46 +90,96 @@ function LoginComponent() {
     return (
         <>
             <form onSubmit={handleSubmition} className="login-form">
-                <div>
-                    <label className="login-label" htmlFor="email">
-                        Email
-                    </label>
-                    <input
-                        className="login-input"
-                        type="text"
-                        id="email"
+                <div className="inputContainer">
+                    <TextField
+                        id="outlined-basic"
+                        label="Email"
+                        onChange={GetUserLoginForm}
+                        ref={inputRef}
+                        variant="outlined"
                         name="email"
-                        onChange={GetUserLoginForm}
-                        ref={inputRef}
+                        className="myInput"
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                color: 'rgb(165, 164, 164)',
+
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#800000',
+                                    borderWidth: '2px',
+                                },
+                                '&.Mui-focused': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                        borderWidth: '3px',
+                                    },
+                                },
+                                '&:hover:not(.Mui-focused)': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                    },
+                                },
+                            },
+                            '& .MuiInputLabel-outlined': {
+                                color: ' rgb(165, 164, 164)',
+                                '&.Mui-focused': {
+                                    color: '#800000',
+                                },
+                            },
+                        }}
                     />
                 </div>
-                <div className="error-message">
+                <small className="error-message">
                     {errorList.length > 0 && IputValidator('email') ? (
-                        <div>{errorList && IputValidator('email')}</div>
+                        <small>{errorList && IputValidator('email')}</small>
                     ) : (
                         ''
                     )}
-                </div>
-                <div>
-                    <label className="login-label" htmlFor="password">
-                        Password
-                    </label>
-                    <input
-                        className="login-input"
-                        type="password"
-                        id="password"
-                        name="password"
-                        onChange={GetUserLoginForm}
-                        ref={inputRef}
-                    />
-                </div>
-                <div className="error-message">
+                </small>
+
+                <TextField
+                    className="myInput"
+                    id="outlined-basic"
+                    label="Password"
+                    onChange={GetUserLoginForm}
+                    ref={inputRef}
+                    variant="outlined"
+                    type="password"
+                    name="password"
+                    sx={{
+                        '& .MuiOutlinedInput-root': {
+                            color: 'rgb(165, 164, 164)',
+
+                            '& .MuiOutlinedInput-notchedOutline': {
+                                borderColor: '#800000',
+                                borderWidth: '2px',
+                            },
+                            '&.Mui-focused': {
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#800000',
+                                    borderWidth: '3px',
+                                },
+                            },
+                            '&:hover:not(.Mui-focused)': {
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#800000',
+                                },
+                            },
+                        },
+                        '& .MuiInputLabel-outlined': {
+                            color: ' rgb(165, 164, 164)',
+                            '&.Mui-focused': {
+                                color: '#800000',
+                            },
+                        },
+                    }}
+                />
+                <small className="error-message">
                     {errorList.length > 0 && IputValidator('password') ? (
-                        <div>invalid Email or Password</div>
+                        <small>invalid Email or Password</small>
                     ) : (
                         ''
                     )}
-                </div>
+                </small>
                 <button className="login-btn">
                     {isLoading ? (
                         <i className="fa-solid fa-gamepad fa-beat"></i>

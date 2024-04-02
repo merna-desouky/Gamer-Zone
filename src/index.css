@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    /* border: 1px solid red; */
 }
 :root {
-    --color-var1: #15181d;
+    --color-var1: #181818;
     --color-var2: #1e2a33;
-    --color-var3: #2c2e30;
-    --color-var4: #ff4136;
+    --color-var3: #212121;
+    --color-var4: #b20606;
     --text-color: #c6c6c6;
     --font-family: 'Poppins', 'Montserrat', sans-serif;
 }

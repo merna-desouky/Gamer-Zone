@@ -17,21 +17,28 @@
     width: 100%;
     height: 3px;
     border-radius: 4px;
-    background-color: #ff4136;
+    background-color: var(--color-var4);
     bottom: 0;
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
-
+@media (max-width: 990px) {
+    .nav-item a:first-child::before {
+        width: 50px;
+    }
+    .nav-item:not(:first-child)::before {
+        width: 75px !important;
+    }
+}
 .navText:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
 
 .signButton button {
-    background-color: #ff4136;
+    background-color: var(--color-var4);
     outline: none;
     border: none;
     color: white;

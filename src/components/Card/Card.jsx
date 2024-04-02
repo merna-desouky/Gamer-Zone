@@ -10,33 +10,31 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import './Card.css';
 import { Box } from '@mui/material';
 import { useFavorites } from '../../context/FavoritesContext';
-import { Link } from 'react-router-dom';
-
-
+import { Link, useNavigate } from 'react-router-dom';
 
 import { useCart } from '../../context/CartContext';
+import { useSelector } from 'react-redux';
 
 export default function ProductCard({ product }) {
     const { toggleFavorite, isFavorite } = useFavorites();
     const { addToCart } = useCart();
+    const navigate = useNavigate();
+    const isLogged = useSelector((state) => state.isLogged);
 
     const fav = isFavorite(product.id);
 
     const handleToggle = () => {
         toggleFavorite(product);
-
-
     };
     const handleAddCart = (el) => {
         addToCart(el);
-
     };
 
     return (
         <Card
             className="product-card"
             sx={{
-                background: '#1E2A33',
+                background: 'var(--color-var3)',
                 borderRadius: '10px',
                 height: '100%',
             }}
@@ -46,7 +44,7 @@ export default function ProductCard({ product }) {
                     <FavoriteIcon
                         sx={{
                             fontSize: '25px',
-                            color: '#FF4136',
+                            color: 'var(--color-var4)',
                             cursor: 'pointer',
                         }}
                     />
@@ -54,9 +52,14 @@ export default function ProductCard({ product }) {
             ) : (
                 <IconButton className="fav-btn" onClick={handleToggle}>
                     <FavoriteBorderOutlinedIcon
+                        onClick={() => {
+                            if (!isLogged) {
+                                navigate('/login');
+                            }
+                        }}
                         sx={{
                             fontSize: '25px',
-                            color: '#FF4136',
+                            color: 'var(--color-var4)',
                             cursor: 'pointer',
                         }}
                     />
@@ -73,10 +76,7 @@ export default function ProductCard({ product }) {
                     alt="green iguana"
                     height="320"
                     image={`/images/${product.poster}`}
-
-
                 />
-
             </Link>
             <Box
                 className="p-2 card-content"
@@ -127,7 +127,7 @@ export default function ProductCard({ product }) {
                         fontSize="14px"
                         margin="0"
                         paddingLeft="8px"
-                        sx={{ color: '#FF4136' }}
+                        sx={{ color: 'var(--color-var4)' }}
                     >
                         {product.price} EGP
                     </Typography>
@@ -139,7 +139,7 @@ export default function ProductCard({ product }) {
                         <ShoppingCartOutlinedIcon
                             className="add-to-cart-btn"
                             sx={{
-                                color: '#FF4136',
+                                color: 'var(--color-var4)',
                                 fontSize: '22px',
                             }}
                         />

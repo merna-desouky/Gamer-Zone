@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff4136;
+    background: var(--color-var4);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -53,7 +53,7 @@
 }
 
 .showButton:hover {
-    border-color: #ff4136;
+    border-color: var(--color-var4);
 }
 
 .showButton:hover i {

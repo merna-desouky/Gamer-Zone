@@ -1,6 +1,6 @@
 import FooterStyle from '../Footer/Footer.module.css';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo1.png';
+import logo from '/images/logo1.png';
 import { useRef } from 'react';
 // import emailjs from '@emailjs/browser';
 import emailjs from 'emailjs-com';
@@ -44,7 +44,7 @@ export default function Footer() {
                                     <div
                                         className="header text-center"
                                         style={{
-                                            color: '#ff4136',
+                                            color: 'var(--color-var4)',
                                             fontSize: '30px',
                                         }}
                                     >
@@ -144,7 +144,11 @@ export default function Footer() {
                                         }}
                                     >
                                         WE ARE READY TO GIVE YOU THE BEST{' '}
-                                        <span style={{ color: '#ff4136' }}>
+                                        <span
+                                            style={{
+                                                color: 'var(--color-var4)',
+                                            }}
+                                        >
                                             Entertainment
                                         </span>
                                         .
@@ -164,7 +168,7 @@ export default function Footer() {
                                                 <i
                                                     className="fa-solid fa-location-dot"
                                                     style={{
-                                                        color: '#ff4136',
+                                                        color: 'var(--color-var4)',
                                                         marginRight: '10px',
                                                         fontSize: '25px',
                                                     }}
@@ -180,7 +184,7 @@ export default function Footer() {
                                                 <i
                                                     className="fa-solid fa-phone"
                                                     style={{
-                                                        color: '#ff4136',
+                                                        color: 'var(--color-var4)',
                                                         marginRight: '10px',
                                                         fontSize: '25px',
                                                     }}
@@ -202,7 +206,7 @@ export default function Footer() {
                                         >
                                             <img
                                                 className=""
-                                                style={{ width: '180px' }}
+                                                style={{ width: '120px' }}
                                                 src={logo}
                                                 alt=""
                                             />
@@ -216,7 +220,7 @@ export default function Footer() {
                                                     target="_blank"
                                                     style={{
                                                         textDecorationColor:
-                                                            '#ff4136',
+                                                            'var(--color-var4)',
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',
@@ -233,7 +237,7 @@ export default function Footer() {
                                                     target="_blank"
                                                     style={{
                                                         textDecorationColor:
-                                                            '#ff4136',
+                                                            'var(--color-var4)',
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',
@@ -248,7 +252,7 @@ export default function Footer() {
                                                     target="_blank"
                                                     style={{
                                                         textDecorationColor:
-                                                            '#ff4136',
+                                                            'var(--color-var4)',
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',

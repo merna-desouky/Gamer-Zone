@@ -6,11 +6,13 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { useFavorites } from '../../context/FavoritesContext';
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import { useCart } from '../../context/CartContext';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 export default function SingleProduct({ item, fav }) {
     const { toggleFavorite } = useFavorites();
     const { addToCart } = useCart();
-
+    const navigate = useNavigate();
+    const isLogged = useSelector((state) => state.isLogged);
     //fav toggle
     const handleToggle = () => {
         toggleFavorite(item);
@@ -68,7 +70,13 @@ export default function SingleProduct({ item, fav }) {
                                         {fav ? (
                                             <FavoriteOutlinedIcon></FavoriteOutlinedIcon>
                                         ) : (
-                                            <FavoriteBorderIcon></FavoriteBorderIcon>
+                                            <FavoriteBorderIcon
+                                                onClick={() => {
+                                                    if (!isLogged) {
+                                                        navigate('/login');
+                                                    }
+                                                }}
+                                            ></FavoriteBorderIcon>
                                         )}
                                     </button>
                                     <button className="product-btn ">

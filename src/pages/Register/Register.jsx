@@ -10,24 +10,29 @@ export default function Register() {
                 <img src="/images/Rectangle 3.png" alt="game-image" />
                 <img src="/images/Overlay.png" alt="overlay" />
             </div>
-            <div className="register">
-                <Link to="/">
-                    <img
-                        src="/assets/images/logo1.png"
-                        width="150px"
-                        height="50px"
-                        className="authLogo"
-                    ></img>
-                </Link>
-                <h3 className="welcome">Welcome</h3>
-                <RegisterComponent />
-                <div className="or">-OR-</div>
-                <div className="authentication-btn">
-                    <GoogleLoginBtn />
-                    <FacebookLoginBtn />
+            <div className="leftSide">
+                {' '}
+                <div className="authLogo">
+                    {' '}
+                    <Link to="/">
+                        <img
+                            src="/images/logo1.png"
+                            width="100px"
+                            height="70px"
+                        ></img>
+                    </Link>
                 </div>
-                <div className="copy-right">
-                    &copy;copyrights reserved to EMJJM
+                <div className="register">
+                    <h3 className="welcome">Create Account</h3>
+                    <RegisterComponent />
+                    <div className="or">-OR-</div>
+                    <div className="authentication-btn">
+                        <GoogleLoginBtn />
+                        <FacebookLoginBtn />
+                    </div>
+                    <div className="copy-right">
+                        &copy;copyrights reserved to EMJJM
+                    </div>
                 </div>
             </div>
         </div>

@@ -84,7 +84,7 @@ function Home() {
                     <h4 className="fw-bold text-white">
                         Gaming Consoles Collection
                     </h4>
-                    <p style={{ color: '#ff4136' }}>
+                    <p style={{ color: 'var(--color-var4)' }}>
                         The Best in Gaming Consoles
                     </p>
                 </div>
@@ -124,7 +124,7 @@ function Home() {
             <div className="container my-5">
                 <div className={`${homeStyle.textContent} mb-4`}>
                     <h4 className="fw-bold text-white">Accessory Favorites</h4>
-                    <p style={{ color: '#ff4136' }}>
+                    <p style={{ color: 'var(--color-var4)' }}>
                         Level Up Your Setup with Our Favorite Accessories
                     </p>
                 </div>
@@ -218,7 +218,7 @@ function Home() {
                             className={`${homeStyle.CategoryImage} ${homeStyle.mediaCategory} position-relative`}
                             style={{
                                 width: '400px',
-                                border: '1px solid #ff4136',
+                                border: '1px solid var(--color-var4)',
                                 borderTopLeftRadius: '10px',
                                 borderTopRightRadius: '10px',
                             }}
@@ -246,7 +246,7 @@ function Home() {
                             style={{
                                 width: '400px',
                                 marginLeft: 'auto',
-                                border: '1px solid #ff4136',
+                                border: '1px solid var(--color-var4)',
                                 borderTopLeftRadius: '10px',
                                 borderTopRightRadius: '10px',
                             }}

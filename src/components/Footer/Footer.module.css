@@ -48,7 +48,7 @@
 }
 
 .submitButton:hover {
-    border-color: #ff4136;
+    border-color: var(--color-var4);
 }
 
 .submitButton:hover i {

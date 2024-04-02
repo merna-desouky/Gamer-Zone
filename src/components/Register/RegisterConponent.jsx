@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Joi from 'joi';
 import './RegisterConponent.css';
 import { Link } from 'react-router-dom';
+import { TextField } from '@mui/material';
 function RegisterConponent() {
     //State Mangment
     const [isLoading, setLoading] = useState(false);
@@ -89,109 +90,232 @@ function RegisterConponent() {
     return (
         <>
             <form onSubmit={handleSubmition} className="register-form">
-                <div>
-                    <label className="register-label" htmlFor="name">
-                        User Name
-                    </label>
-                    <input
-                        className="register-input"
-                        type="text"
-                        id="name"
-                        name="name"
+                <div className="inputContainer">
+                    <TextField
+                        id="outlined-basic"
+                        label="Name"
                         onChange={GetUserRegisterForm}
                         ref={inputRef}
-                        placeholder="Please Write Your Name"
+                        variant="outlined"
+                        name="name"
+                        className="myInput"
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                color: 'rgb(165, 164, 164)',
+
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#800000',
+                                    borderWidth: '1px',
+                                },
+                                '&.Mui-focused': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                        borderWidth: '2px',
+                                    },
+                                },
+                                '&:hover:not(.Mui-focused)': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                    },
+                                },
+                            },
+                            '& .MuiInputLabel-outlined': {
+                                color: ' rgb(165, 164, 164)',
+                                '&.Mui-focused': {
+                                    color: '#800000',
+                                },
+                            },
+                        }}
                     />
                 </div>
 
-                <div className="error-message">
+                <small className="error-message">
                     {errorList.length > 0 && IputValidator('name') ? (
-                        <div>{errorList && IputValidator('name')}</div>
+                        <small>{errorList && IputValidator('name')}</small>
                     ) : (
                         ''
                     )}
-                </div>
-                <div>
-                    <label className="register-label" htmlFor="email">
-                        Email
-                    </label>
-                    <input
-                        className="register-input"
-                        type="text"
-                        id="email"
-                        name="email"
+                </small>
+                <div className="inputContainer">
+                    <TextField
+                        id="outlined-basic"
+                        label="Email"
                         onChange={GetUserRegisterForm}
-                        placeholder="Please Write Your Email"
+                        variant="outlined"
+                        name="email"
+                        className="myInput"
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                color: 'rgb(165, 164, 164)',
+
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#800000',
+                                    borderWidth: '1px',
+                                },
+                                '&.Mui-focused': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                        borderWidth: '2px',
+                                    },
+                                },
+                                '&:hover:not(.Mui-focused)': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                    },
+                                },
+                            },
+                            '& .MuiInputLabel-outlined': {
+                                color: ' rgb(165, 164, 164)',
+                                '&.Mui-focused': {
+                                    color: '#800000',
+                                },
+                            },
+                        }}
                     />
                 </div>
 
-                <div className="error-message">
+                <small className="error-message">
                     {errorList.length > 0 && IputValidator('email') ? (
-                        <div>{errorList && IputValidator('email')}</div>
+                        <small>{errorList && IputValidator('email')}</small>
                     ) : (
                         ''
                     )}
-                </div>
-                <div>
-                    <label className="register-label" htmlFor="password">
-                        Password
-                    </label>
-                    <input
-                        className="register-input"
-                        type="password"
-                        id="password"
+                </small>
+                <div className="inputContainer">
+                    <TextField
+                        id="outlined-basic"
+                        label="Password"
+                        onChange={GetUserRegisterForm}
+                        variant="outlined"
                         name="password"
-                        onChange={GetUserRegisterForm}
-                        placeholder="Please Write Your Password"
-                    />
-                </div>
-                <div className="error-message">
-                    {errorList.length > 0 && IputValidator('password') ? (
-                        <div>invalid Password</div>
-                    ) : (
-                        ''
-                    )}
-                </div>
-                <div>
-                    <label className="register-label" htmlFor="rePassword">
-                        confirm Password
-                    </label>
-                    <input
-                        className="register-input"
+                        className="myInput"
                         type="password"
-                        id="rePassword"
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                color: 'rgb(165, 164, 164)',
+
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#800000',
+                                    borderWidth: '1px',
+                                },
+                                '&.Mui-focused': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                        borderWidth: '2px',
+                                    },
+                                },
+                                '&:hover:not(.Mui-focused)': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                    },
+                                },
+                            },
+                            '& .MuiInputLabel-outlined': {
+                                color: ' rgb(165, 164, 164)',
+                                '&.Mui-focused': {
+                                    color: '#800000',
+                                },
+                            },
+                        }}
+                    />
+                </div>
+                <small className="error-message">
+                    {errorList.length > 0 && IputValidator('password') ? (
+                        <small>invalid Password</small>
+                    ) : (
+                        ''
+                    )}
+                </small>
+                <div className="inputContainer">
+                    <TextField
+                        id="outlined-basic"
+                        label="Confirm Password"
+                        onChange={GetUserRegisterForm}
+                        variant="outlined"
                         name="rePassword"
-                        onChange={GetUserRegisterForm}
-                        placeholder="Please Re-enter Your Password"
+                        className="myInput"
+                        type="password"
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                color: 'rgb(165, 164, 164)',
+
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#800000',
+                                    borderWidth: '1px',
+                                },
+                                '&.Mui-focused': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                        borderWidth: '2px',
+                                    },
+                                },
+                                '&:hover:not(.Mui-focused)': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                    },
+                                },
+                            },
+                            '& .MuiInputLabel-outlined': {
+                                color: ' rgb(165, 164, 164)',
+                                '&.Mui-focused': {
+                                    color: '#800000',
+                                },
+                            },
+                        }}
                     />
                 </div>
-                <div className="error-message">
+                <small className="error-message">
                     {errorList.length > 0 && IputValidator('rePassword') ? (
-                        <div>invalid Password</div>
+                        <small>invalid Password</small>
                     ) : (
                         ''
                     )}
-                </div>
-                <div>
-                    <label className="register-label" htmlFor="phone">
-                        Phone
-                    </label>
-                    <input
-                        className="register-input"
-                        type="tel"
-                        id="phone"
-                        name="phone"
+                </small>
+                <div className="inputContainer">
+                    <TextField
+                        id="outlined-basic"
+                        label="Phone"
                         onChange={GetUserRegisterForm}
-                        placeholder="Please enter Your Phone"
+                        variant="outlined"
+                        name="phone"
+                        className="myInput"
+                        type="tel"
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                color: 'rgb(165, 164, 164)',
+
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#800000',
+                                    borderWidth: '1px',
+                                },
+                                '&.Mui-focused': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                        borderWidth: '2px',
+                                    },
+                                },
+                                '&:hover:not(.Mui-focused)': {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#800000',
+                                    },
+                                },
+                            },
+                            '& .MuiInputLabel-outlined': {
+                                color: ' rgb(165, 164, 164)',
+                                '&.Mui-focused': {
+                                    color: '#800000',
+                                },
+                            },
+                        }}
                     />
                 </div>
-                <div className="error-message">
+                <small className="error-message">
                     {errorList.length > 0 && IputValidator('phone') ? (
-                        <div>{errorList && IputValidator('phone')}</div>
+                        <small>{errorList && IputValidator('phone')}</small>
                     ) : (
                         ''
                     )}
-                </div>
+                </small>
                 {registerError && (
                     <div className="error-message">{registerError}</div>
                 )}
@@ -199,7 +323,7 @@ function RegisterConponent() {
                     {isLoading ? (
                         <i className="fa-solid fa-gamepad fa-beat"></i>
                     ) : (
-                        'Create Account'
+                        'Sign Up'
                     )}
                 </button>
 

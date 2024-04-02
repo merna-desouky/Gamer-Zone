@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
-import logo from '../../assets/images/logo1.png';
+import logo from '/images/logo1.png';
 import navbarStyle from '../Navbar/Navbar.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { logOut } from '../../redux/store/LoginSlice/LoginSlice';
@@ -48,11 +48,15 @@ const Navbar = () => {
             <nav
                 className={`navbar navbar-expand-lg ${navbarStyle.shift}`}
                 data-bs-theme="dark"
-                style={{ backgroundColor: '#06131D' }}
+                style={{ backgroundColor: 'var(--color-var1)' }}
             >
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
-                        <img src={logo} alt="" style={{ width: '100px' }} />
+                        <img
+                            src={logo}
+                            alt=""
+                            style={{ width: '75px', height: '50px' }}
+                        />
                     </Link>
                     <button
                         className="navbar-toggler z-3"
@@ -115,7 +119,8 @@ const Navbar = () => {
                                     className={navbarStyle.cart}
                                     sx={{
                                         '& .MuiBadge-badge': {
-                                            backgroundColor: '#ff4136',
+                                            backgroundColor:
+                                                'var(--color-var4)',
                                             color: 'white',
                                         },
                                     }}

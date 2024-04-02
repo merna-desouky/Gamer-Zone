@@ -37,6 +37,11 @@
     padding: 1rem 1.5rem;
     border-radius: 6px;
     margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.login-btn:hover {
+    background-color: var(--color-var4);
+    color: white;
 }
 @media (max-width: 767px) {
     .login-label {
@@ -66,4 +71,8 @@
     .login-input::placeholder {
         font-size: 0.7rem;
     }
+}
+.inputContainer,
+.myInput {
+    width: 100%;
 }

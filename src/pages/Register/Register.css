@@ -1,17 +1,23 @@
 .register-holder {
     display: flex;
-    gap: 6rem;
+    /* gap: 6rem; */
     min-height: 100vh;
 }
 .register-image {
     position: relative;
     overflow: hidden;
+    width: 100%;
+}
+.register-image img {
+    height: 100%;
 }
 
 .register-image :nth-child(2) {
     position: absolute;
     left: 0;
+    bottom: 0;
     height: 100%;
+    width: 100%;
 }
 .welcome {
     margin-top: 1rem;
@@ -32,7 +38,10 @@
     color: var(--color-var4);
 }
 .register {
-    margin: 90px;
+    width: 100%;
+    padding: 30px;
+
+    padding-top: 0;
 }
 .register .authLogo {
     top: -60px;
@@ -46,7 +55,7 @@
     text-align: center;
     color: var(--color-var4);
 }
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     .register-holder {
         justify-content: center;
     }

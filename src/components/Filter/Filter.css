@@ -1,5 +1,5 @@
 .filter {
-    background-color: #1e2a33;
+    background-color: var(--color-var3);
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
