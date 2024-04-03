@@ -32,7 +32,7 @@ function Products() {
     useEffect(() => {
         const fetchProducts = async () => {
             const response = await fetch(
-                'https://gamerzoneserver1.onrender.com/products'
+                'https://gamerzoneserver1.onrender.com/randomProducts'
             );
             const data = await response.json();
             setProducts(data);

@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    /* border: 1px solid red; */
 }
 :root {
     --color-var1: #181818;
@@ -43,7 +42,9 @@ input:-webkit-autofill {
 }
 ::selection {
     background-color: var(--color-var4);
+    color: var(--color-var1);
 }
+
 body {
     background-color: var(--color-var1);
     font-family: 'Press Start 2P', sans-serif;
