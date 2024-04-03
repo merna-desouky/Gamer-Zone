@@ -93,18 +93,19 @@ function Filter({ setFilter }) {
                                 inputProps={{
                                     style: {
                                         color: 'white',
-                                        height: '36px',
-                                        fontSize: '14px',
+                                        height: '30px',
+                                        fontSize: '12px',
+                                        fontFamily: 'var( --font-family)',
                                     },
                                 }}
                                 InputLabelProps={{ style: { color: 'white' } }}
                                 sx={{
                                     color: 'white',
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#858585', // Set border color to white
+                                        borderColor: '#858585',
                                     },
                                     '& .MuiOutlinedInput-root': {
-                                        height: '36px', // Decrease the height of the input
+                                        height: '36px',
                                     },
                                 }}
                             />
@@ -119,18 +120,19 @@ function Filter({ setFilter }) {
                                 inputProps={{
                                     style: {
                                         color: 'white',
-                                        height: '36px',
-                                        fontSize: '14px',
+                                        height: '30px',
+                                        fontSize: '12px',
+                                        fontFamily: 'var( --font-family)',
                                     },
                                 }}
                                 InputLabelProps={{ style: { color: 'white' } }}
                                 sx={{
                                     color: 'white',
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#858585', // Set border color to white
+                                        borderColor: '#858585',
                                     },
                                     '& .MuiOutlinedInput-root': {
-                                        height: '36px', // Decrease the height of the input
+                                        height: '36px',
                                     },
                                 }}
                             />
@@ -155,7 +157,7 @@ function Filter({ setFilter }) {
                                         <Checkbox
                                             sx={{
                                                 '& .MuiSvgIcon-root': {
-                                                    color: '#858585', // Change the color of the checkbox outline
+                                                    color: '#858585',
                                                     fontSize: '20px',
                                                 },
                                             }}
@@ -167,7 +169,13 @@ function Filter({ setFilter }) {
                                         />
                                     }
                                     label={
-                                        <span style={{ fontSize: '14px' }}>
+                                        <span
+                                            style={{
+                                                fontSize: '12px',
+                                                fontFamily:
+                                                    'var( --font-family)',
+                                            }}
+                                        >
                                             Consoles
                                         </span>
                                     }
@@ -179,8 +187,7 @@ function Filter({ setFilter }) {
                                         <Checkbox
                                             sx={{
                                                 '& .MuiSvgIcon-root': {
-                                                    color: '#858585', // Change the color of the checkbox outline
-                                                    fontSize: '20px',
+                                                    color: '#858585',
                                                 },
                                             }}
                                             checked={gamesChecked}
@@ -191,7 +198,13 @@ function Filter({ setFilter }) {
                                         />
                                     }
                                     label={
-                                        <span style={{ fontSize: '16px' }}>
+                                        <span
+                                            style={{
+                                                fontSize: '12px',
+                                                fontFamily:
+                                                    'var( --font-family)',
+                                            }}
+                                        >
                                             Games
                                         </span>
                                     }
@@ -203,7 +216,7 @@ function Filter({ setFilter }) {
                                         <Checkbox
                                             sx={{
                                                 '& .MuiSvgIcon-root': {
-                                                    color: '#858585', // Change the color of the checkbox outline
+                                                    color: '#858585',
                                                     fontSize: '20px',
                                                 },
                                             }}
@@ -215,7 +228,13 @@ function Filter({ setFilter }) {
                                         />
                                     }
                                     label={
-                                        <span style={{ fontSize: '16px' }}>
+                                        <span
+                                            style={{
+                                                fontSize: '11px',
+                                                fontFamily:
+                                                    'var( --font-family)',
+                                            }}
+                                        >
                                             Accessories
                                         </span>
                                     }
@@ -225,9 +244,13 @@ function Filter({ setFilter }) {
                     </FormGroup>
                 </div>
                 {/* Apply filter button */}
-                <div className="row  ">
-                    <div className="col-12 d-flex justify-content-center mt-3  ">
-                        <button onClick={handleApply} className="btn w-75 ">
+                <div className="row">
+                    <div className="col-12 d-flex justify-content-center mt-3">
+                        <button
+                            onClick={handleApply}
+                            className="btn w-75"
+                            style={{ fontSize: '0.8rem' }}
+                        >
                             Apply
                         </button>
                     </div>
