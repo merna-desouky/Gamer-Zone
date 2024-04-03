@@ -2,7 +2,6 @@ import FooterStyle from '../Footer/Footer.module.css';
 import { Link } from 'react-router-dom';
 import logo from '/images/logo1.png';
 import { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
 import emailjs from 'emailjs-com';
 
 export default function Footer() {
@@ -45,7 +44,7 @@ export default function Footer() {
                                         className="header text-center"
                                         style={{
                                             color: 'var(--color-var4)',
-                                            fontSize: '30px',
+                                            fontSize: '20px',
                                         }}
                                     >
                                         Get in touch
@@ -66,6 +65,7 @@ export default function Footer() {
                                                 borderTop: 'none',
                                                 borderLeft: 'none',
                                                 borderRight: 'none',
+                                                fontSize: '0.8rem',
                                             }}
                                         />
                                         <input
@@ -83,6 +83,7 @@ export default function Footer() {
                                                 borderTop: 'none',
                                                 borderLeft: 'none',
                                                 borderRight: 'none',
+                                                fontSize: '0.8rem',
                                             }}
                                         />
                                         <textarea
@@ -100,14 +101,16 @@ export default function Footer() {
                                                 borderTop: 'none',
                                                 borderLeft: 'none',
                                                 borderRight: 'none',
+                                                resize: 'none',
+                                                fontSize: '0.8rem',
                                             }}
                                         ></textarea>
-                                        <div className="cheack d-flex">
+                                        <div className="cheack d-flex align-items-center">
                                             <input id="terms" type="checkbox" />{' '}
                                             <label
                                                 htmlFor="terms"
                                                 style={{
-                                                    fontSize: '12px',
+                                                    fontSize: '8px',
                                                     fontWeight: 'normal',
                                                     color: '#ccc',
                                                     marginLeft: '5px',
@@ -120,6 +123,10 @@ export default function Footer() {
                                         <button
                                             type="submit"
                                             className={`${FooterStyle.submitButton} px-3 py-2`}
+                                            style={{
+                                                fontSize: '12px',
+                                                marginTop: '5rem',
+                                            }}
                                             onClick={sendEmail}
                                         >
                                             <span>Submit</span>
@@ -131,27 +138,20 @@ export default function Footer() {
                             <div className="col-md-8 fw-bold text-white z-3 d-flex justify-content-center align-items-center">
                                 <div
                                     className="main-content"
-                                    style={{ width: '75%' }}
+                                    style={{ padding: '0 20px' }}
                                 >
                                     <div
                                         className={FooterStyle.headTitle}
                                         style={{
-                                            width: '50%',
-                                            fontSize: '35px',
+                                            width: '90%',
+                                            fontSize: '16px',
                                             fontWeight: 'bold',
                                             margin: '0 auto 20px',
                                             textAlign: 'center',
                                         }}
                                     >
                                         WE ARE READY TO GIVE YOU THE BEST{' '}
-                                        <span
-                                            style={{
-                                                color: 'var(--color-var4)',
-                                            }}
-                                        >
-                                            Entertainment
-                                        </span>
-                                        .
+                                        <span>Entertainment</span>.
                                     </div>
                                     <div
                                         style={{
@@ -161,9 +161,13 @@ export default function Footer() {
                                     >
                                         <div
                                             className={`address d-flex justify-content-between mt-5 ${FooterStyle.addressSmall}`}
+                                            style={{ marginBottom: '50px' }}
                                         >
                                             <div
-                                                className={`d-flex ${FooterStyle.smallAdd}`}
+                                                className={`d-flex gap-2 align-items-center ${FooterStyle.smallAdd}`}
+                                                style={{
+                                                    marginInlineEnd: '30px',
+                                                }}
                                             >
                                                 <i
                                                     className="fa-solid fa-location-dot"
@@ -173,13 +177,18 @@ export default function Footer() {
                                                         fontSize: '25px',
                                                     }}
                                                 ></i>
-                                                <p className="">
+                                                <p
+                                                    style={{
+                                                        fontSize: '9px',
+                                                        margin: '0',
+                                                    }}
+                                                >
                                                     Masr ElGdeda, Street
-                                                    Sheraton Elmatar , 35222
+                                                    Sheraton Elmatar, 35222
                                                 </p>
                                             </div>
                                             <div
-                                                className={`d-flex ${FooterStyle.smallAdd}`}
+                                                className={`d-flex gap-2 align-items-center ${FooterStyle.smallAdd}`}
                                             >
                                                 <i
                                                     className="fa-solid fa-phone"
@@ -189,13 +198,18 @@ export default function Footer() {
                                                         fontSize: '25px',
                                                     }}
                                                 ></i>
-                                                <p className="">
+                                                <p
+                                                    style={{
+                                                        fontSize: '9px',
+                                                        margin: '0',
+                                                    }}
+                                                >
                                                     Call us: +01063403215
                                                 </p>
                                             </div>
                                         </div>
 
-                                        <div
+                                        {/* <div
                                             className="d-flex justify-content-center"
                                             style={{
                                                 width: '50%',
@@ -210,7 +224,7 @@ export default function Footer() {
                                                 src={logo}
                                                 alt=""
                                             />
-                                        </div>
+                                        </div> */}
                                         <div className="d-flex justify-content-center gap-4">
                                             <div className="">
                                                 <Link
@@ -224,6 +238,7 @@ export default function Footer() {
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',
+                                                        fontSize: '0.7rem',
                                                     }}
                                                 >
                                                     instagram
@@ -241,6 +256,7 @@ export default function Footer() {
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',
+                                                        fontSize: '0.7rem',
                                                     }}
                                                 >
                                                     facebook
@@ -256,6 +272,7 @@ export default function Footer() {
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',
+                                                        fontSize: '0.7rem',
                                                     }}
                                                 >
                                                     twitter

@@ -8,7 +8,6 @@ const loginSlice = createSlice({
             const encodedToken = localStorage.getItem('userToken');
             const decodedToken = jwtDecode(encodedToken);
             state = decodedToken;
-            console.log(state, 'state');
             return state;
         },
         logOut: (state) => {

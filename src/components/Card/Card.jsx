@@ -101,10 +101,12 @@ export default function ProductCard({ product }) {
                             variant="h5"
                             component="p"
                             color="white"
-                            fontSize="0.9rem"
+                            fontSize="0.6rem"
                             textAlign="center"
                             lineHeight="1.5rem"
-                            sx={{}}
+                            sx={{
+                                fontFamily: 'var(--font-family)',
+                            }}
                         >
                             {product.name}
                         </Typography>
@@ -122,10 +124,13 @@ export default function ProductCard({ product }) {
                         gutterBottom
                         component="p"
                         color="white"
-                        fontSize="14px"
+                        fontSize="10px"
                         margin="0"
                         paddingLeft="8px"
-                        sx={{ color: 'var(--color-var4)' }}
+                        sx={{
+                            color: 'var(--color-var4)',
+                            fontFamily: 'var(--font-family)',
+                        }}
                     >
                         {product.price} EGP
                     </Typography>

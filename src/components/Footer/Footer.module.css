@@ -19,19 +19,6 @@
     height: 550px;
 }
 
-/* .inputField{
-  background:"none";
-  outline:"none" ;
-  caret-color: #eee;
-  color: #eee;
-  padding:"10px";
-  margin-bottom:"15px" ;
-  border-bottom:"1px solid #eee" ;
-  border-top:"none" ;
-  border-left:"none" ;
-  border-right:"none";
-} */
-
 .submitButton {
     background: none;
     outline: none;
@@ -70,7 +57,12 @@
         gap: 10px;
     }
 }
-
+@media (max-width: 480px) {
+    .main-content {
+        width: 90%;
+        border: 5px red solid;
+    }
+}
 @keyframes arrowMoving {
     0%,
     100% {

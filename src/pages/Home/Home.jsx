@@ -90,10 +90,16 @@ function Home() {
             {/* Start Console Product section */}
             <div className="container" style={{ marginTop: '100px' }}>
                 <div className={`${homeStyle.textContent} mb-4`}>
-                    <h4 className="fw-bold text-white">
+                    <h5 className="fw-bold text-white">
                         Gaming Consoles Collection
-                    </h4>
-                    <p style={{ color: 'var(--color-var4)' }}>
+                    </h5>
+                    <p
+                        style={{
+                            color: 'var(--color-var4)',
+                            fontSize: '14px',
+                            margin: '20px 0 30px',
+                        }}
+                    >
                         The Best in Gaming Consoles
                     </p>
                 </div>
@@ -132,8 +138,14 @@ function Home() {
             {/* Start Accessory section */}
             <div className="container my-5">
                 <div className={`${homeStyle.textContent} mb-4`}>
-                    <h4 className="fw-bold text-white">Accessory Favorites</h4>
-                    <p style={{ color: 'var(--color-var4)' }}>
+                    <h5 className="fw-bold text-white">Accessory Favorites</h5>
+                    <p
+                        style={{
+                            color: 'var(--color-var4)',
+                            fontSize: '14px',
+                            margin: '20px 0 30px',
+                        }}
+                    >
                         Level Up Your Setup with Our Favorite Accessories
                     </p>
                 </div>
@@ -172,11 +184,11 @@ function Home() {
 
             <div className="container my-5">
                 <div className="text-content mb-4">
-                    <h4
+                    <h5
                         className={`${homeStyle.textContent} fw-bold text-white`}
                     >
                         Games
-                    </h4>
+                    </h5>
                 </div>
 
                 <div className="row justify-content-center align-item-center text-center">
@@ -215,18 +227,18 @@ function Home() {
             {/* Start Keyboard, Mouse And Headsets Section */}
             <div className="container">
                 <div className={`mb-5 `}>
-                    <h4
-                        className={`${homeStyle.textContent} fw-bold text-white`}
+                    <h5
+                        className={`${homeStyle.textContent} fw-bold text-white text-center`}
                     >
                         Keyboard, Mouse And Headsets
-                    </h4>
+                    </h5>
                 </div>
                 <div className="row mb-5">
                     <div className="col-md-6">
                         <div
                             className={`${homeStyle.CategoryImage} ${homeStyle.mediaCategory} position-relative`}
                             style={{
-                                width: '400px',
+                                width: '350px',
                                 border: '1px solid var(--color-var4)',
                                 borderTopLeftRadius: '10px',
                                 borderTopRightRadius: '10px',
@@ -242,9 +254,9 @@ function Home() {
                                     <img className="w-100" src={mouse} alt="" />
                                 </div>
                                 <div className={homeStyle.overLay}>
-                                    <h5 className="d-flex justify-content-center mt-4 text-white">
+                                    <h6 className="d-flex justify-content-center mt-4 text-white">
                                         Keyboard, Mouse
-                                    </h5>
+                                    </h6>
                                 </div>
                             </Link>{' '}
                         </div>
@@ -253,7 +265,7 @@ function Home() {
                         <div
                             className={`${homeStyle.CategoryImage} ${homeStyle.mediaCategory} position-relative`}
                             style={{
-                                width: '400px',
+                                width: '350px',
                                 marginLeft: 'auto',
                                 border: '1px solid var(--color-var4)',
                                 borderTopLeftRadius: '10px',
@@ -274,9 +286,9 @@ function Home() {
                                     />
                                 </div>
                                 <div className={homeStyle.overLay}>
-                                    <h5 className="d-flex justify-content-center mt-4 text-white">
+                                    <h6 className="d-flex justify-content-center mt-4 text-white">
                                         HeadSets
-                                    </h5>
+                                    </h6>
                                 </div>
                             </Link>{' '}
                         </div>
