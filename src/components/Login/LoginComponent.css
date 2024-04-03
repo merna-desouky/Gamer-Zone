@@ -20,6 +20,11 @@
     padding: 0.6rem;
     color: white;
 }
+.error-message {
+    color: var(--color-var4);
+    font-family: 'Poppins', sans-serif;
+    width: 450px;
+}
 
 .login-input::placeholder {
     color: var(--color-var4);
@@ -81,6 +86,9 @@
 @media (max-width: 900px) {
     .inputContainer,
     .myInput {
+        width: 100%;
+    }
+    .error-message {
         width: 100%;
     }
 }
