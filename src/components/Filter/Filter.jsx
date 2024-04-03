@@ -95,7 +95,7 @@ function Filter({ setFilter }) {
                                         color: 'white',
                                         height: '30px',
                                         fontSize: '12px',
-                                        fontFamily: 'var( --font-family)',
+                                        fontFamily: 'Poppins',
                                     },
                                 }}
                                 InputLabelProps={{ style: { color: 'white' } }}
@@ -122,7 +122,7 @@ function Filter({ setFilter }) {
                                         color: 'white',
                                         height: '30px',
                                         fontSize: '12px',
-                                        fontFamily: 'var( --font-family)',
+                                        fontFamily: 'Poppins',
                                     },
                                 }}
                                 InputLabelProps={{ style: { color: 'white' } }}
@@ -171,9 +171,8 @@ function Filter({ setFilter }) {
                                     label={
                                         <span
                                             style={{
-                                                fontSize: '12px',
-                                                fontFamily:
-                                                    'var( --font-family)',
+                                                fontSize: '14px',
+                                                fontFamily: 'Poppins',
                                             }}
                                         >
                                             Consoles
@@ -200,9 +199,8 @@ function Filter({ setFilter }) {
                                     label={
                                         <span
                                             style={{
-                                                fontSize: '12px',
-                                                fontFamily:
-                                                    'var( --font-family)',
+                                                fontSize: '14px',
+                                                fontFamily: 'Poppins',
                                             }}
                                         >
                                             Games
@@ -230,9 +228,8 @@ function Filter({ setFilter }) {
                                     label={
                                         <span
                                             style={{
-                                                fontSize: '11px',
-                                                fontFamily:
-                                                    'var( --font-family)',
+                                                fontSize: '14px',
+                                                fontFamily: 'Poppins',
                                             }}
                                         >
                                             Accessories
@@ -249,7 +246,10 @@ function Filter({ setFilter }) {
                         <button
                             onClick={handleApply}
                             className="btn w-75"
-                            style={{ fontSize: '0.8rem' }}
+                            style={{
+                                // fontSize: '0.8rem',
+                                fontFamily: 'Poppins',
+                            }}
                         >
                             Apply
                         </button>

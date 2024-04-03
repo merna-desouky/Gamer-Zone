@@ -14,7 +14,7 @@ function Login() {
                 {' '}
                 <div className="authLogo">
                     <Link to="/">
-                        <img src="/images/logo1.png" height="60px"></img>
+                        <img src="/images/logo1.png" height="70px"></img>
                     </Link>
                 </div>
                 <div className="login">
