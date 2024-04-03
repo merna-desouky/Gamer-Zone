@@ -11,14 +11,14 @@ export default function Profile() {
             <div className="cover">
                 {' '}
                 <div className="profileImg">
-                    <img
-                        style={{ borderRadius: '50%', filter: 'invert(0)' }}
-                        src={
-                            isLogged?.picture
-                                ? isLogged?.picture
-                                : '/images/profile.png'
-                        }
-                    ></img>
+                    {isLogged.picture ? (
+                        <img
+                            src={isLogged.picture}
+                            style={{ borderRadius: '50%', filter: 'invert(0)' }}
+                        ></img>
+                    ) : (
+                        <img src="/images/profile.png"></img>
+                    )}
                     <div className="name">{isLogged?.name}</div>
                 </div>
             </div>
