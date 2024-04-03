@@ -85,9 +85,9 @@ function Home() {
             {/* End landing-image section */}
 
             {/* Start Console Product section */}
-            <div className="container" style={{ marginTop: '100px' }}>
+            <div className="container" style={{ marginTop: '60px' }}>
                 <div className={`${homeStyle.textContent} mb-4`}>
-                    <h5 className="fw-bold text-white">
+                    <h5 className={`fw-bold text-white ${homeStyle.title}`}>
                         Gaming Consoles Collection
                     </h5>
                     <p
@@ -136,7 +136,9 @@ function Home() {
             {/* Start Accessory section */}
             <div className="container my-5">
                 <div className={`${homeStyle.textContent} mb-4`}>
-                    <h5 className="fw-bold text-white">Accessory Favorites</h5>
+                    <h5 className={`fw-bold text-white ${homeStyle.title}`}>
+                        Accessory Favorites
+                    </h5>
                     <p
                         style={{
                             color: 'var(--color-var4)',

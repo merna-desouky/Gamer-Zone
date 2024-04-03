@@ -1,5 +1,5 @@
 import './SingleProduct.css';
-import { Rating } from '@mui/material';
+import { IconButton, Rating } from '@mui/material';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -19,6 +19,11 @@ export default function SingleProduct({ item, fav }) {
     };
     const handleAddToCart = (item) => {
         addToCart(item);
+    };
+    const handleFav = () => {
+        if (!isLogged) {
+            navigate('/login');
+        }
     };
     return (
         <div className="singleProductGames">
@@ -63,26 +68,51 @@ export default function SingleProduct({ item, fav }) {
                                             <span>{item.price} EGP</span>
                                         </button>
                                     </Link>
-                                    <button
-                                        className="product-btn "
-                                        onClick={handleToggle}
-                                    >
-                                        {fav ? (
-                                            <FavoriteOutlinedIcon></FavoriteOutlinedIcon>
-                                        ) : (
+
+                                    {!isLogged ? (
+                                        <IconButton
+                                            className="product-btn "
+                                            onClick={handleFav}
+                                        >
                                             <FavoriteBorderIcon
-                                                onClick={() => {
-                                                    if (!isLogged) {
-                                                        navigate('/login');
-                                                }
+                                                sx={{
+                                                    fontSize: '25px',
+                                                    // color: 'var(--color-var4)',
+                                                    cursor: 'pointer',
                                                 }}
-                                            ></FavoriteBorderIcon>
-                                        )}
-                                    </button>
+                                            />
+                                        </IconButton>
+                                    ) : fav ? (
+                                        <IconButton
+                                            className="product-btn "
+                                            onClick={handleToggle}
+                                        >
+                                            <FavoriteOutlinedIcon
+                                                sx={{
+                                                    fontSize: '25px',
+                                                    color: 'var(--color-var4)',
+                                                    cursor: 'pointer',
+                                                }}
+                                            />
+                                        </IconButton>
+                                    ) : (
+                                        <IconButton
+                                            className="product-btn "
+                                            onClick={handleToggle}
+                                        >
+                                            <FavoriteBorderIcon
+                                                sx={{
+                                                    fontSize: '25px',
+                                                    // color: 'var(--color-var4)',
+                                                    cursor: 'pointer',
+                                                }}
+                                            />
+                                        </IconButton>
+                                    )}
+
                                     <button className="product-btn ">
                                         <CardGiftcardIcon></CardGiftcardIcon>
                                     </button>
-
                                     <button
                                         className="product-btn "
                                         onClick={() => {

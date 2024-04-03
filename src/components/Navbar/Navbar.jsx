@@ -74,7 +74,7 @@ const Navbar = () => {
                     >
                         <ul
                             className={`${navbarStyle.smallMedia} navbar-nav me-auto mb-2 mb-lg-0`}
-                            style={{ marginLeft: '35%' }}
+                            style={{ marginLeft: '29%' }}
                         >
                             <li className={`nav-item ${navbarStyle.navItem}`}>
                                 <NavLink
@@ -153,6 +153,7 @@ const Navbar = () => {
                                                     height="40px"
                                                     style={{
                                                         borderRadius: '50%',
+                                                        filter: 'invert(0)',
                                                     }}
                                                 ></img>
                                             ) : (

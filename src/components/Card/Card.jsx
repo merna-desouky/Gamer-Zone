@@ -116,7 +116,7 @@ export default function ProductCard({ product }) {
                             variant="h5"
                             component="p"
                             color="white"
-                            fontSize="1rem"
+                            fontSize="0.9rem"
                             textAlign="center"
                             lineHeight="1.5rem"
                             fontFamily="Poppins"
