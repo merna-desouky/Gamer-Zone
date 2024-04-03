@@ -10,7 +10,7 @@ function FacebookLoginBtn() {
     return (
         <>
             <LoginSocialFacebook
-                appId="388173284024594"
+                appId="719830756988976"
                 onResolve={(response) => {
                     localStorage.setItem(
                         'userToken',
