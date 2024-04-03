@@ -1,6 +1,6 @@
 .filter {
     background-color: var(--color-var3);
-    padding: 1rem;
+    padding: 25px 15px;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
     display: flex;

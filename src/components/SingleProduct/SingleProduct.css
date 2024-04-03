@@ -1,5 +1,6 @@
 .singleProductGames,
 .singleProductConsoles {
+    font-family: 'Poppins', sans-serif !important;
     margin-bottom: 30px;
 }
 .singleProductGames .myCard .img {

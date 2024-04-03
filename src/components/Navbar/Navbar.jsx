@@ -54,11 +54,7 @@ const Navbar = () => {
             >
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
-                        <img
-                            src={logo}
-                            alt=""
-                            style={{ width: '75px', height: '50px' }}
-                        />
+                        <img src={logo} alt="" style={{ height: '55px' }} />
                     </Link>
                     <button
                         className="navbar-toggler z-3"
@@ -150,9 +146,9 @@ const Navbar = () => {
                                             }
                                             onClick={handleClick}
                                         >
-                                            {isLogged.picture ? (
+                                            {isLogged?.picture ? (
                                                 <img
-                                                    src={isLogged.picture}
+                                                    src={isLogged?.picture}
                                                     width="40px"
                                                     height="40px"
                                                     style={{

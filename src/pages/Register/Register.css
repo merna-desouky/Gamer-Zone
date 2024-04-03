@@ -20,7 +20,6 @@
     width: 100%;
 }
 .welcome {
-    margin-top: 1rem;
     text-align: center;
     color: var(--color-var4);
     text-transform: uppercase;
@@ -32,6 +31,7 @@
     text-align: center;
     color: white;
     font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif !important;
 }
 .account a {
     text-decoration: none;
@@ -54,6 +54,7 @@
     margin-top: 1rem;
     text-align: center;
     color: var(--color-var4);
+    font-family: 'Poppins', sans-serif !important;
 }
 @media (max-width: 1000px) {
     .register-holder {

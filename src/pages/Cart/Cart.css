@@ -1,5 +1,6 @@
 .cartPage {
     margin: 60px 0;
+    font-family: 'Poppins', sans-serif !important;
 }
 .items {
     background-color: var(--color-var3);

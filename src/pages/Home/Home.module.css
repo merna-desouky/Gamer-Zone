@@ -49,7 +49,7 @@
     border: 1px solid white;
     border-radius: 6px;
     transition: 0.3s;
-    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
     height: 3rem;
 }
 

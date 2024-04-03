@@ -29,6 +29,11 @@ export default function ProductCard({ product }) {
             navigate('/login');
         }
     };
+    const handleFav = () => {
+        if (!isLogged) {
+            navigate('/login');
+        }
+    };
     const handleAddCart = (el) => {
         addToCart(el);
     };
@@ -42,7 +47,17 @@ export default function ProductCard({ product }) {
                 height: '100%',
             }}
         >
-            {fav ? (
+            {!isLogged ? (
+                <IconButton className="fav-btn" onClick={handleFav}>
+                    <FavoriteBorderOutlinedIcon
+                        sx={{
+                            fontSize: '25px',
+                            color: 'var(--color-var4)',
+                            cursor: 'pointer',
+                        }}
+                    />
+                </IconButton>
+            ) : fav ? (
                 <IconButton className="fav-btn" onClick={handleToggle}>
                     <FavoriteIcon
                         sx={{
@@ -101,12 +116,10 @@ export default function ProductCard({ product }) {
                             variant="h5"
                             component="p"
                             color="white"
-                            fontSize="0.6rem"
+                            fontSize="1rem"
                             textAlign="center"
                             lineHeight="1.5rem"
-                            sx={{
-                                fontFamily: 'var(--font-family)',
-                            }}
+                            fontFamily="Poppins"
                         >
                             {product.name}
                         </Typography>
@@ -124,12 +137,12 @@ export default function ProductCard({ product }) {
                         gutterBottom
                         component="p"
                         color="white"
-                        fontSize="10px"
+                        fontSize="14px"
                         margin="0"
                         paddingLeft="8px"
+                        fontFamily="Poppins"
                         sx={{
                             color: 'var(--color-var4)',
-                            fontFamily: 'var(--font-family)',
                         }}
                     >
                         {product.price} EGP

@@ -80,8 +80,8 @@ function Filter({ setFilter }) {
     return (
         <div>
             <div className="row filter">
-                <p>Price</p>
-                <div className="col-12">
+                <p style={{ fontSize: '13px' }}>Price</p>
+                <div className="col-12 mb-4">
                     {/* min and max price inputs */}
                     <Grid container spacing={2}>
                         <Grid item xs={6}>
@@ -142,7 +142,9 @@ function Filter({ setFilter }) {
                     </div>
                 </div>
 
-                <p>Category</p>
+                <p style={{ fontSize: '13px', marginBottom: '10px' }}>
+                    Category
+                </p>
                 {/* category checkboxes */}
                 <div className="row">
                     <FormGroup>

@@ -1,11 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useState, useContext } from 'react';
+import { useSelector } from 'react-redux';
 
 const FavoritesContext = createContext();
 
 export const useFavorites = () => useContext(FavoritesContext);
 
 export const FavoritesProvider = ({ children }) => {
+    const isLogged = useSelector((state) => state.isLogged);
     const [favorites, setFavorites] = useState([]);
 
     const toggleFavorite = (product) => {
@@ -17,7 +19,9 @@ export const FavoritesProvider = ({ children }) => {
     };
 
     const addToFavorites = (product) => {
-        setFavorites([...favorites, product]);
+        if (isLogged) {
+            setFavorites([...favorites, product]);
+        }
     };
 
     const removeFromFavorites = (productId) => {

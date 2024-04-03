@@ -15,23 +15,15 @@ export default function Register() {
                 <div className="authLogo">
                     {' '}
                     <Link to="/">
-                        <img
-                            src="/images/logo1.png"
-                            width="100px"
-                            height="70px"
-                        ></img>
+                        <img src="/images/logo1.png" height="60px"></img>
                     </Link>
                 </div>
                 <div className="register">
                     <h3 className="welcome">Create Account</h3>
                     <RegisterComponent />
-                    <div className="or">-OR-</div>
                     <div className="authentication-btn">
                         <GoogleLoginBtn />
                         <FacebookLoginBtn />
-                    </div>
-                    <div className="copy-right">
-                        &copy;copyrights reserved to EMJJM
                     </div>
                 </div>
             </div>

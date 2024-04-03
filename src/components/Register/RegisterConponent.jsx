@@ -104,25 +104,25 @@ function RegisterConponent() {
                                 color: 'rgb(165, 164, 164)',
 
                                 '& .MuiOutlinedInput-notchedOutline': {
-                                    borderColor: '#800000',
+                                    borderColor: 'var(--color-var4)',
                                     borderWidth: '1px',
                                 },
                                 '&.Mui-focused': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                         borderWidth: '2px',
                                     },
                                 },
                                 '&:hover:not(.Mui-focused)': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                     },
                                 },
                             },
                             '& .MuiInputLabel-outlined': {
                                 color: ' rgb(165, 164, 164)',
                                 '&.Mui-focused': {
-                                    color: '#800000',
+                                    color: 'var(--color-var4)',
                                 },
                             },
                         }}
@@ -149,25 +149,25 @@ function RegisterConponent() {
                                 color: 'rgb(165, 164, 164)',
 
                                 '& .MuiOutlinedInput-notchedOutline': {
-                                    borderColor: '#800000',
+                                    borderColor: 'var(--color-var4)',
                                     borderWidth: '1px',
                                 },
                                 '&.Mui-focused': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                         borderWidth: '2px',
                                     },
                                 },
                                 '&:hover:not(.Mui-focused)': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                     },
                                 },
                             },
                             '& .MuiInputLabel-outlined': {
                                 color: ' rgb(165, 164, 164)',
                                 '&.Mui-focused': {
-                                    color: '#800000',
+                                    color: 'var(--color-var4)',
                                 },
                             },
                         }}
@@ -195,25 +195,25 @@ function RegisterConponent() {
                                 color: 'rgb(165, 164, 164)',
 
                                 '& .MuiOutlinedInput-notchedOutline': {
-                                    borderColor: '#800000',
+                                    borderColor: 'var(--color-var4)',
                                     borderWidth: '1px',
                                 },
                                 '&.Mui-focused': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                         borderWidth: '2px',
                                     },
                                 },
                                 '&:hover:not(.Mui-focused)': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                     },
                                 },
                             },
                             '& .MuiInputLabel-outlined': {
                                 color: ' rgb(165, 164, 164)',
                                 '&.Mui-focused': {
-                                    color: '#800000',
+                                    color: 'var(--color-var4)',
                                 },
                             },
                         }}
@@ -240,25 +240,25 @@ function RegisterConponent() {
                                 color: 'rgb(165, 164, 164)',
 
                                 '& .MuiOutlinedInput-notchedOutline': {
-                                    borderColor: '#800000',
+                                    borderColor: 'var(--color-var4)',
                                     borderWidth: '1px',
                                 },
                                 '&.Mui-focused': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                         borderWidth: '2px',
                                     },
                                 },
                                 '&:hover:not(.Mui-focused)': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                     },
                                 },
                             },
                             '& .MuiInputLabel-outlined': {
                                 color: ' rgb(165, 164, 164)',
                                 '&.Mui-focused': {
-                                    color: '#800000',
+                                    color: 'var(--color-var4)',
                                 },
                             },
                         }}
@@ -285,25 +285,25 @@ function RegisterConponent() {
                                 color: 'rgb(165, 164, 164)',
 
                                 '& .MuiOutlinedInput-notchedOutline': {
-                                    borderColor: '#800000',
+                                    borderColor: 'var(--color-var4)',
                                     borderWidth: '1px',
                                 },
                                 '&.Mui-focused': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                         borderWidth: '2px',
                                     },
                                 },
                                 '&:hover:not(.Mui-focused)': {
                                     '& .MuiOutlinedInput-notchedOutline': {
-                                        borderColor: '#800000',
+                                        borderColor: 'var(--color-var4)',
                                     },
                                 },
                             },
                             '& .MuiInputLabel-outlined': {
                                 color: ' rgb(165, 164, 164)',
                                 '&.Mui-focused': {
-                                    color: '#800000',
+                                    color: 'var(--color-var4)',
                                 },
                             },
                         }}
@@ -327,7 +327,7 @@ function RegisterConponent() {
                     )}
                 </button>
 
-                <div className="account">
+                <div className="account mb-4 ">
                     Already have a account? <Link to="/login">Log In</Link>
                 </div>
             </form>

@@ -1,6 +1,5 @@
 import FooterStyle from '../Footer/Footer.module.css';
 import { Link } from 'react-router-dom';
-import logo from '/images/logo1.png';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
@@ -65,7 +64,7 @@ export default function Footer() {
                                                 borderTop: 'none',
                                                 borderLeft: 'none',
                                                 borderRight: 'none',
-                                                fontSize: '0.8rem',
+                                                fontFamily: 'Poppins',
                                             }}
                                         />
                                         <input
@@ -83,7 +82,7 @@ export default function Footer() {
                                                 borderTop: 'none',
                                                 borderLeft: 'none',
                                                 borderRight: 'none',
-                                                fontSize: '0.8rem',
+                                                fontFamily: 'Poppins',
                                             }}
                                         />
                                         <textarea
@@ -102,7 +101,7 @@ export default function Footer() {
                                                 borderLeft: 'none',
                                                 borderRight: 'none',
                                                 resize: 'none',
-                                                fontSize: '0.8rem',
+                                                fontFamily: 'Poppins',
                                             }}
                                         ></textarea>
                                         <div className="cheack d-flex align-items-center">
@@ -110,7 +109,7 @@ export default function Footer() {
                                             <label
                                                 htmlFor="terms"
                                                 style={{
-                                                    fontSize: '8px',
+                                                    fontFamily: 'Poppins',
                                                     fontWeight: 'normal',
                                                     color: '#ccc',
                                                     marginLeft: '5px',
@@ -124,7 +123,7 @@ export default function Footer() {
                                             type="submit"
                                             className={`${FooterStyle.submitButton} px-3 py-2`}
                                             style={{
-                                                fontSize: '12px',
+                                                fontFamily: 'Poppins',
                                                 marginTop: '5rem',
                                             }}
                                             onClick={sendEmail}
@@ -143,15 +142,15 @@ export default function Footer() {
                                     <div
                                         className={FooterStyle.headTitle}
                                         style={{
-                                            width: '90%',
-                                            fontSize: '16px',
+                                            fontSize: '22px',
+                                            fontFamily: 'Poppins',
+                                            height: 'auto',
                                             fontWeight: 'bold',
-                                            margin: '0 auto 20px',
                                             textAlign: 'center',
                                         }}
                                     >
-                                        WE ARE READY TO GIVE YOU THE BEST{' '}
-                                        <span>Entertainment</span>.
+                                        WE ARE READY TO GIVE YOU THE BEST
+                                        ENTERTAINMENT .
                                     </div>
                                     <div
                                         style={{
@@ -179,7 +178,7 @@ export default function Footer() {
                                                 ></i>
                                                 <p
                                                     style={{
-                                                        fontSize: '9px',
+                                                        fontFamily: 'Poppins',
                                                         margin: '0',
                                                     }}
                                                 >
@@ -200,7 +199,7 @@ export default function Footer() {
                                                 ></i>
                                                 <p
                                                     style={{
-                                                        fontSize: '9px',
+                                                        fontFamily: 'Poppins',
                                                         margin: '0',
                                                     }}
                                                 >
@@ -209,22 +208,6 @@ export default function Footer() {
                                             </div>
                                         </div>
 
-                                        {/* <div
-                                            className="d-flex justify-content-center"
-                                            style={{
-                                                width: '50%',
-                                                margin: 'auto',
-                                                marginTop: '30px',
-                                                marginBottom: '50px',
-                                            }}
-                                        >
-                                            <img
-                                                className=""
-                                                style={{ width: '120px' }}
-                                                src={logo}
-                                                alt=""
-                                            />
-                                        </div> */}
                                         <div className="d-flex justify-content-center gap-4">
                                             <div className="">
                                                 <Link
@@ -238,7 +221,7 @@ export default function Footer() {
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',
-                                                        fontSize: '0.7rem',
+                                                        fontFamily: 'Poppins',
                                                     }}
                                                 >
                                                     instagram
@@ -256,7 +239,7 @@ export default function Footer() {
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',
-                                                        fontSize: '0.7rem',
+                                                        fontFamily: 'Poppins',
                                                     }}
                                                 >
                                                     facebook
@@ -272,7 +255,7 @@ export default function Footer() {
                                                         textDecorationThickness:
                                                             '0.2em',
                                                         color: 'white',
-                                                        fontSize: '0.7rem',
+                                                        fontFamily: 'Poppins',
                                                     }}
                                                 >
                                                     twitter

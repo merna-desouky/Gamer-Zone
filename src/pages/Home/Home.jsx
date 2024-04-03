@@ -50,28 +50,25 @@ function Home() {
                                 </h5>
                                 <div className="d-grid gap-2 d-md-block mt-3">
                                     <div
-                                        className="p-3 bg-secondary text-white rounded-1 d-inline-block mx-1"
+                                        className="p-2 bg-secondary text-white rounded-1 d-inline-block mx-1"
                                         style={{
-                                            width: '150px',
-                                            fontSize: '11px',
+                                            fontFamily: 'Poppins',
                                         }}
                                     >
                                         Multiplayer
                                     </div>
                                     <div
-                                        className="p-3 bg-secondary text-white rounded-1 d-inline-block mx-1"
+                                        className="p-2 bg-secondary text-white rounded-1 d-inline-block mx-1"
                                         style={{
-                                            width: '150px',
-                                            fontSize: '11px',
+                                            fontFamily: 'Poppins',
                                         }}
                                     >
                                         Massively
                                     </div>
                                     <div
-                                        className="p-3 bg-secondary text-white rounded-1 d-inline-block mx-1"
+                                        className="p-2 bg-secondary text-white rounded-1 d-inline-block mx-1"
                                         style={{
-                                            width: '150px',
-                                            fontSize: '11px',
+                                            fontFamily: 'Poppins',
                                         }}
                                     >
                                         Beat em Up
@@ -96,8 +93,9 @@ function Home() {
                     <p
                         style={{
                             color: 'var(--color-var4)',
+                            margin: '15px 0 30px',
+                            fontFamily: 'Poppins',
                             fontSize: '14px',
-                            margin: '20px 0 30px',
                         }}
                     >
                         The Best in Gaming Consoles
@@ -142,8 +140,9 @@ function Home() {
                     <p
                         style={{
                             color: 'var(--color-var4)',
+                            fontFamily: 'Poppins',
+                            margin: '15px 0 30px',
                             fontSize: '14px',
-                            margin: '20px 0 30px',
                         }}
                     >
                         Level Up Your Setup with Our Favorite Accessories

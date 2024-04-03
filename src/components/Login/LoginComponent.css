@@ -37,7 +37,9 @@
     padding: 1rem 1.5rem;
     border-radius: 6px;
     margin-bottom: 1rem;
+    font-size: 18px;
     transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
 }
 .login-btn:hover {
     background-color: var(--color-var4);
@@ -74,5 +76,17 @@
 }
 .inputContainer,
 .myInput {
+    width: 450px;
+}
+@media (max-width: 900px) {
+    .inputContainer,
+    .myInput {
+        width: 100%;
+    }
+}
+.login-form .MuiFormControl-root {
     width: 100%;
+}
+.login-form input {
+    height: 18px;
 }

@@ -8,6 +8,9 @@
     overflow: hidden;
     width: 100%;
 }
+.login-image img {
+    width: 100%;
+}
 .authLogo {
     /* margin-top: -0px;
     margin-bottom: 20px; */
@@ -20,7 +23,8 @@
 }
 .welcome {
     margin-bottom: 30px;
-    color: #800000;
+    color: var(--color-var4);
+    font-family: 'Poppins', sans-serif;
 }
 .login {
     align-self: center;
