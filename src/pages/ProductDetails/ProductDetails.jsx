@@ -18,7 +18,7 @@ function ProductDetails() {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    'https://gamerzoneserver1.onrender.com/products'
+                    'https://gamerzoneserver1.onrender.com/randomProducts'
                 );
                 const foundItem = await response.data.find(
                     (el) => el.id === +id
